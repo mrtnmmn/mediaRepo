@@ -3,7 +3,7 @@ package com.avalon.mediaRepo.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+@Document("Books")
 public class Book {
 
     @Id
@@ -14,6 +14,7 @@ public class Book {
     private String author;
 
     public Book(String id, String name, String author) {
+        super();
         this.id = id;
         this.name = name;
         this.author = author;
